@@ -1,0 +1,29 @@
+.container {
+	overflow: hidden;
+	display: table;
+	font-family: "Times", "Arial", "Verdana";
+	font-size: 16px;
+}
+
+.profileContainer {
+	float: left;
+	width: 25%;
+	height: 100vh;
+	min-width: 200px;
+	display: table-column;
+}
+
+.jobContainer {
+	float: left;
+	width: 75%;
+	height: 100vh;
+	overflow: auto;
+}
+
+@media screen and (max-width: 820px) {
+	.profileContainer, .jobContainer {
+		width: 100%;
+		overflow: hidden;
+		height: 100%;
+	}	
+}

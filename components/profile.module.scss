@@ -1,0 +1,67 @@
+.container {
+    padding: .5rem;
+    width: 100%;
+    min-width: 215px;
+    height: 100%;
+    background-color: #1C6E8C;
+    color: white;
+    text-align: center;
+}
+
+.imageContainer {
+    width: 195px;
+    min-width: 195px;
+    height: 195px;
+    min-height: 195px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: auto;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit: none;
+}
+
+.name, .title, .description {
+    width: 100%;
+    margin: 0;
+}
+
+.description {
+    padding-bottom: 20px;
+}
+
+.name {
+    // font-weight: bold;
+    font-size: 20px;
+}
+
+.name, .title {
+    text-align: center;
+}
+
+.title {
+    font-style: italic;
+}
+
+.title, .description {
+    font-size: 16px;
+}
+
+.email {
+    color: white;
+
+    :hover {
+        color: black;
+    }
+
+    > a {
+        color: white;
+    }
+}
+
+.links {
+    padding-top: 10px;
+}
