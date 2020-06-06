@@ -1,15 +1,33 @@
 import Head from 'next/head'
 import Resume from '../components/resume'
+import Layout from '../components/layout'
+import Parallax from '../components/parallax'
 import { getAllUserData } from '../lib/profile'
 
 function PortfolioPage({ users }) {
-
     return (
-        <div>
-            <Head>
-                <title>marcos.lemus.io</title>
-            </Head>
-            <Resume value={users['marcos']}></Resume>
+        <div className='container'>
+            <Layout>
+                <Head>
+                    <title>marcos.lemus.io</title>
+                </Head>
+                <Resume value={users['marcos']}></Resume>
+            </Layout>
+
+            <style jsx global>{`
+                html, 
+                body {
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .container {
+                    width: 100vw;
+                    height: 100vh;
+                }
+            `}</style>
         </div>
     )
 }
