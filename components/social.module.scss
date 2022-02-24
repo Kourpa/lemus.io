@@ -1,15 +1,15 @@
 .container {
     display: inline-grid;
     grid-template-columns: 20px 20px 20px 20px;
-    column-gap: 2px;
+    column-gap: 8px;
 }
 
 .link {
-    border: solid 1px black;
     border-radius: 10%;
 
     :hover {
-        background-color: white;
+        background-color: #ffffffaa;
+        border-radius: 100%;
     }
 }
 
